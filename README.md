@@ -1,4 +1,5 @@
- # Predict New York Cause of Mortality
+ # Predict Gender of the New York Deceased
 
- Plotly Dash web app to predict New York citizens cause of death
+ Plotly Dash web app to predict the gender of the deceased New York Citizens 
  
+ Website : 
