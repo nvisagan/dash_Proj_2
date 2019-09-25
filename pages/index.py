@@ -29,28 +29,27 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Value Proposition
+            ## Predict Gender
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            Using machine learning and datasets from Health.gov,
+            this app allows helps predict the gender of the deceased based on various features 
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            Based on data from 2007 to 2016, the model can predict the gender with 71 percent accuracy
 
             """
         ),
-        dcc.Link(dbc.Button('Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Gender Predictor', color='primary'), href='/predictions')
     ],
     md=4,
 )
 
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
+# gapminder = px.data.gapminder()
+# fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
+#            hover_name="country", log_x=True, size_max=60)
 
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+    html.Img(src='assets/new-york.jpg', className='img-fluid')
     ]
 )
 
