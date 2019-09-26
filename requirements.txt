@@ -2,4 +2,6 @@ dash
 dash-bootstrap-components
 gunicorn
 pandas
-joblib
+joblib==0.13.2
+scikit-learn==0.21.3
+category_encoders==2.0.0
