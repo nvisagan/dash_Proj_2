@@ -13,6 +13,11 @@ column1 = dbc.Col(
         
             ## Process
 
+            ### Introduction
+            I wanted to create a predictive model surrounding the health of people. I looked at various
+            datasets on different repositories and collections pertaining to health. Originally I looked at E-coli outbreaks, but this did not excite me
+            I  
+
 
             """
         ),
