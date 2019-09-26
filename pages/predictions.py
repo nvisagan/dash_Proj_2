@@ -42,7 +42,7 @@ column1 = dbc.Col(
                 {'label': 'Black Non-Hispanic', 'value': 'Black Non-Hispanic'},
                 {'label': 'White Non-Hispanic', 'value': 'White Non-Hispanic'}
             ], 
-            value = 'Africa', 
+            value = 'Hispanic', 
             className='mb-5', 
         ), 
     ],
