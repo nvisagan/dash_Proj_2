@@ -31,8 +31,8 @@ column1 = dbc.Col(
         
             ## Predict Gender
 
-            Using machine learning and datasets from Health.gov,
-            this app allows helps predict the gender of the deceased based on various features 
+            Using machine learning and datasets from HealthData.gov,
+            this app allows users predict the gender of the deceased based on various features 
 
             Based on data from 2007 to 2016, the model can predict the gender with 71 percent accuracy
 
