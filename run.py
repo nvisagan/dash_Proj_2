@@ -26,7 +26,7 @@ sticky (string, optional): Stick the navbar to the top or the bottom of the view
 """
 
 navbar = dbc.NavbarSimple(
-    brand='New York Mortality',
+    brand='John or Jane Doe',
     brand_href='/', 
     children=[
         dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
@@ -45,7 +45,7 @@ footer = dbc.Container(
             html.P(
                 [
                     html.Span('Navo Visagan', className='mr-2'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/<you>/<repo>'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://https://github.com/nvisagan/dash_Proj_2'), 
                     html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/navo-visagan/'), 
                     html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/NavoVisagan'), 
                 ], 

@@ -29,16 +29,16 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Predict Gender
+            ## Predicting Gender of the Deceased
 
-            Using machine learning and datasets from HealthData.gov,
+            Using machine learning and datasets from [HealthData.gov](https://healthdata.gov/),
             this app allows users predict the gender of the deceased based on various features 
 
             Based on data from 2007 to 2016, the model can predict the gender with 71 percent accuracy
 
             """
         ),
-        dcc.Link(dbc.Button('Gender Predictor', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Try it out', color='primary'), href='/predictions')
     ],
     md=4,
 )
