@@ -14,7 +14,7 @@ column1 = dbc.Col(
             ---
             ### Introduction
             Most deaths are issued a death certificate detailing the specifics of the person and the cause of death. 
-            In rare cases, the certificate may not no the person’s name and classify him as a John or Jane Doe. 
+            In rare cases, the certificate may not have the person’s name and classify him as a John or Jane Doe. 
             In extreme cases, the gender of the deceased cannot be specified due to various obstacles. 
             I wondered in such scenarios is it possible to guess the gender based on various circumstances. Let's take a look.
 
@@ -25,11 +25,11 @@ column1 = dbc.Col(
             * **Sex**: The deceased’s sex
             * **Race Ethnicity**: The deceased ethnicity
             * **Deaths**: The number of people who died due to cause of death 
-            * **Death Rate** The death rate within the sex and Race/ethnicity category
-            * **Age Adjusted Death Rate**: The age-adjusted death rate within the sex and Race/ethnicity category
+            * **Death Rate** The death rate within the sex and race/ethnicity category
+            * **Age-Adjusted Death Rate**: The age-adjusted death rate within the sex and race/ethnicity category
 
             ### Cleaning
-            Most data needs to cleaned properly. This one was no exception. Luckily, it wasn't too strenuous. First order of business was to clean the NaN values. 
+            Most datasets need to be cleaned properly. This one was no exception. Luckily, it wasn't too strenuous. The first order of business was to clean the NaN values. 
             I had the idea of filling the NaN's with the means of the columns. However, the columns were not numeric. I simply changed them with `pd.to_numeric` and filled the NaN
             values using `df['column'].fillna((df['column'].mean()), inplace=True)`. Another small cleanup I preformed was making sure the sex column had the same string values throughout.
             The earlier portion of the data had recorded male and female as *M* and *F*. Using the `.replace` function *M* became Male and *F* became Female for consistency.
@@ -48,10 +48,9 @@ column1 = dbc.Col(
 
             ### Conclusion & What's next
             This was an interesting project. Each step of the process I was learning and reinforcing various skills I learned of the past two units. I want to come back and try a multi-classification problem,
-            with my target as the Leading Cause of death. I feel it could more useful to predict how a person died than simplying prediciting the gender of deceased. Ofcourse, the HTML components can be cleaned up also.
+            with my target as the Leading Cause of death. I feel it could more useful to predict how a person died than simplying predicting the gender of the deceased. Of course, the HTML components can be cleaned up also.
             But all of that is for another time. The github repo is linked below as well as my various social outlets so you can follow my data science and machine learning journey. 
                 
-
             """
         ),
 
